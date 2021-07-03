@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background-color: bisque;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+/* Molude */
+
+.section-divider {
+    height: 500px;
+    background-size: cover;
+    background-position: 0% 70%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blackbg-text {
+    font-size: 32px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    letter-spacing: 10px;
+}
+
+.sandwich {
+    margin: 0% 20%
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*Flow*/
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Top Content */
+
+.p-pic {
+    flex-basis: 40%;
+}
+
+.description {
+    flex-basis: 57%;
+    margin-left: 3%;
+    align-self: center;
+}
+
+/* Mid Content */
+
+.my-list {
+    flex-basis: 50%;
+}
+
+.beside-list {
+    flex-basis: 50%;
+}
+
+/* Btm Content */
+
+.column {
+    flex-basis: 50%;
+    padding: 0% 4px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #888888;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+/*Image*/
+
+.top-image {
+    background-image: url("images/top.jpg");
+}
+
+.mid-image {
+    background-image: url("images/mid.jpg");
+}
+
+.btm-image {
+    background-image: url("images/btm.jpg");
+}
+
+img {
+    width: 100%;
+}
+
+/* Media Query */
+
+/* Tablets */
+
+@media screen and ( max-width: 800px) {
+    /* Top Content */
+    .p-pic {
+        flex-basis: 100%;
+    }
+    .description {
+        flex-basis: 100%;
+    }
+    /* Mid Content */
+    .my-list {
+        flex-basis: 100%;
+    }
+    .beside-list {
+        flex-basis: 100%;
+    }
+    /* Btm Content */
+    .column {
+        flex-basis: 50%;
+        padding: 0% 4px;
+        box-sizing: border-box;
+    }
+}
+
+/* Phone */
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex-basis: 100%;
+    }
+}
